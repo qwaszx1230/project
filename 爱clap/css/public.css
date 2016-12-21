@@ -1,0 +1,20 @@
+/*公共文件区*/
+@charset "utf-8";
+html{width: 100%;height: 100%;background-color: #f9f9f9;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,a{margin:0px;padding:0px;}
+body{ font-family:"Microsoft YaHei", Arial;font-size:12px; min-width:1300px;width: 100%;height: 100%;overflow-x: auto;overflow-y:auto;}
+a{outline:none; text-decoration:none;}
+a:hover{ color: #007ae2;}
+img{border:0;}
+body input{outline:none;}
+ul li{ list-style:none}
+em,i{ font-style: normal;}
+.clear{clear:both;*display:inline;}
+.clearfix:after {content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height:0;}
+*html .clearfix{zoom:1;}
+.fl{ float:left;}
+.fr{ float:right;}
+.blank20{ padding-top: 20px;}
+textarea{resize:none;}
+
+

@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/*左边*/
+.aside-left{ position:fixed; float:left; height:100%; bottom:0px; top:0px; left:0px; width:198px; background:#33323a; z-index:1000;}
+
+.logo{ height:50px; padding-top:20px; border-bottom:1px solid #6e6d73; text-align:center;}
+
+/*导航*/
+.aside-left .title01{ padding:10px 20px; font-size:14px; color:#706f74; line-height:24px; margin-top:10px;}
+.nav li{ height:50px;}
+.nav a{ display:block; height:30px; padding:10px 0px; padding-left:32px; height:30px; line-height:30px; font-size:16px; color:#fff;}
+.nav a span{ display:inline-block; width:30px; height:30px; background:url(../images/admin_icon.png) no-repeat; }
+.nav .a01 span{ background-position:-10px 0px;}
+.nav .a01:hover span{ background-position:-10px -30px;}
+.nav .a01.active span{ background-position:-10px -30px;}
+.nav .a02 span{ background-position:-10px -60px;}
+.nav .a02:hover span{ background-position:-10px -90px;}
+.nav .a02.active span{ background-position:-10px -90px;}
+.nav .a03 span{ background-position:-10px -120px;}
+.nav .a03:hover span{ background-position:-10px -150px;}
+.nav .a03.active span{ background-position:-10px -150px;}
+.nav .a04 span{ background-position:-10px -180px;}
+.nav .a04:hover span{ background-position:-10px -210px;}
+.nav .a04.active span{ background-position:-10px -210px;}
+.nav .a05 span{ background-position:-10px -240px;}
+.nav .a05:hover span{ background-position:-10px -270px;}
+.nav .a05.active span{ background-position:-10px -270px;}
+.nav a:hover{ background:#1fb4ae;}
+.nav .active{ background:#1fb4ae;}
+.aside-left .title02{ padding:10px 20px; font-size:14px; color:#706f74; line-height:24px; margin-top:30px;}
+
+/*右边 主内容区*/
+.main{ margin-left:198px; position:relative; min-width:802px;}
+
+.top{ height:45px; background:#d7d7d7; text-align:right; padding-right:95px;}
+.top .a01{ font-size:18px; color:#727272; line-height:45px; text-decoration:underline;}
+.top .exit-btn{ display:inline-block; height:45px; line-height:45px; padding-right:40px; background:url(../images/exit_btn.jpg) no-repeat right center;}
+
+.tishi-cuo{ width:100%; height:45px; background:#bf3e1f; position:absolute; top:45px; font-size:18px; color:#fff; line-height:45px; text-align:center;}
+.tishi-dui{ width:100%; height:45px; background:#7fbc30; position:absolute; top:45px; font-size:18px; color:#fff; line-height:45px; text-align:center;}
+
+
+
+/*开发者信息*/
+.kaifazhe-info{ width:560px; margin:0px auto; margin-top:70px;}
+
+.kaifazhe-info table tr td{ padding:10px 5px; line-height:26px; font-size:18px; color:#4e4e4e; position:relative;}
+.kaifazhe-info table tr .name{ text-align:right; padding-right:10px;}
+
+
+.kaifazhe-info table td .input01{ padding:3px 5px; border:1px solid #aaaaaa; height:22px; line-height:22px; font-size:14px; color:#333;}
+.kaifazhe-info table td .input01:focus{ border-color: #3bb4f2; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3) }
+.kaifazhe-info table td .bianji-tishi{ padding-left:35px; color:#c03d21; display:inline-block; height:26px; background:url(../images/bianji.jpg) no-repeat left center;}
+
+.kaifazhe-info table td .select01 { display:inline-block; width: 100%; padding:3px 10px; font-size: 14px; line-height: 22px; color: #333; vertical-align: middle; border: 1px solid #aaaaaa;  -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; background:url(../images/sanjiao.png) no-repeat right center;}
+.kaifazhe-info table td .select01:focus{ border-color: #3bb4f2; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3) }
+
+.xiugai-box{ margin-top:50px; padding-left:100px;}
+.xiugai-box .xiugai-btn{ display:inline-block; width:162px; height:38px; line-height:38px; border-radius:3px; text-align:center; color:#fff; background:#1fb5ac; font-size:16px; font-weight:400;}
+.xiugai-box .xiugai-btn:hover{ background:#1da09b;}
+
+
+/*修改密码*/
+.kaifazhe-password{ width:450px; margin:0px auto; margin-top:100px;}
+
+.kaifazhe-password table tr td{ padding:10px 5px; line-height:26px; font-size:18px; color:#4e4e4e; position:relative;}
+.kaifazhe-password table tr .name{ text-align:right; padding-right:10px;}
+
+
+.kaifazhe-password table td .input01{ padding:3px 5px; border:1px solid #aaaaaa; height:22px; line-height:22px; font-size:14px; color:#333;}
+.kaifazhe-password table td .input01:focus{ border-color: #3bb4f2; outline: 0; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3); box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59,180,242,.3) }
+
+.xiugai02-box{ margin-top:50px; padding-left:150px;}
+.xiugai02-box .xiugai-btn{ display:inline-block; width:162px; height:38px; line-height:38px; border-radius:3px; text-align:center; color:#fff; background:#1fb5ac; font-size:16px; font-weight:400;}
+.xiugai02-box .xiugai-btn:hover{ background:#1da09b;}
+
+
+
+/*导量概况*/
+.daoliang-content{ padding:45px 20px 30px 40px;}
+
+.daoliang-content .title01{ height:30px; line-height:30px; color:#484848; font-size:16px; padding-left:35px; background:url(../images/icon03.jpg) no-repeat 0px 2px;}
+.daoliang-content .title02{ height:30px; line-height:30px; color:#484848; font-size:16px; padding-left:35px; background:url(../images/icon04.jpg) no-repeat 0px 2px; margin-top:50px; position:relative;}
+.daoliang-content .title03{ height:30px; line-height:30px; color:#484848; font-size:16px; padding-left:35px; background:url(../images/icon05.jpg) no-repeat 0px 3px; margin-top:50px; position:relative;}
+
+/*一个产品*/
+.one-pro{ margin-left:24px; margin-top:30px; max-width:1307px;}
+.one-pro table{  }
+.one-pro table tr td{border:1px solid #9a9a9a; height:224px; vertical-align:middle; text-align:center;}
+.one-pro table tr td .span01{ color:#349b26; font-size:24px; padding:0px 10px; }
+
+.one-pro table tr td .span02{ color:#767676; font-size:22px; padding:0px 10px; }
+.one-pro table tr td .span-icon01{ color:#f6521f; font-size:24px; padding:0px 10px; line-height:40px; background:url(../images/icon01.jpg) no-repeat left center; padding-left:40px; }
+.one-pro table tr td .span-icon02{ color:#1fb5ac; font-size:24px; padding:0px 10px; line-height:40px; background:url(../images/icon02.jpg) no-repeat left center; padding-left:40px; }
+
+/*多个产品*/
+.many-pro{margin-left:24px;  max-width:1307px;}
+.many-pro ul li{ cursor:pointer; float:left; display:inline; width:216px; height:220px; padding:34px 12px 18px 12px; border:1px solid #a7a7a7; border-radius:10px; margin-right:48px;  margin-top:30px; position:relative;}
+.many-pro ul li .ptitle{ position:absolute; height:50px; line-height:50px; width:216px; top:10px; text-align:center;}
+.many-pro ul li .ptitle span{ display:inline-block; padding:0px 20px; height:50px; line-height:50px; font-size:20px; background:#fff; overflow:hidden;}
+.many-pro ul li .pcontent{ border:3px dashed #bababa; border-radius:10px; height:130px; padding:40px 20px; }
+.many-pro ul li .pcontent .span01{ display:block; height:65px; line-height:64px;background:url(../images/icon01.jpg) no-repeat left center; padding-left:40px; line-height: 64px; font-size:34px;}
+.many-pro ul li .pcontent .span02{ display:block; height:65px; line-height:64px;background:url(../images/icon02.jpg) no-repeat left center; padding-left:40px; line-height: 64px; font-size:34px;}
+
+
+.many-pro ul li .shuoming{ display:none;}
+.many-pro ul li:hover .shuoming{ display:block; position:absolute; z-index:100; top:0px; left:0px;  width:218px; height:240px; padding:16px 12px 18px 12px; background:rgba(0,0,0,.8);border-radius:10px;}
+
+.many-pro ul li:hover .shuoming .p01{ color:#fff; font-size:22px; line-height:40px; text-align:center;}
+.many-pro ul li:hover .shuoming .p02{ color:#fff; font-size:18px; line-height:34px; text-align:center;}
+
+
+/*产品导量趋势图*/
+.qushitu-content{ border:1px solid #9a9a9a;  margin-left:24px; margin-top:20px; height:355px; max-width:1267px; position:relative; padding:0px 20px; padding-top:80px;}
+
+.qushitu-bar{ position:absolute; height:36px; top:0px; left:0px;}
+.qushitu-bar li{ float:left; height:36px; width:124px;}
+
+.qushitu-bar li a{ display:inline-block; height:36px; width:124px; background:#878787; color:#fff; font-size:14px; line-height:36px; text-align:center;}
+.qushitu-bar li a:hover{ background:#0cb7bf;}
+.qushitu-bar li.active a{ background:#0cb7bf;}
+
+.qushitu-img{ height:318px; width:100%; background:url(../images/image02.jpg) no-repeat left top;}
+
+/*产品导量趋势图*/
+.daoliang-detail{ margin-left:24px; margin-top:20px; max-width:1307px; position:relative;}
+
+.daoliang-detail table tr th{ width:20%; text-align:center; vertical-align:middle; height:50px; line-height:50px; background:#33323a; font-size:16px; color:#fff}
+.daoliang-detail table{ border:1px solid #e1e1e1;}
+.daoliang-detail table tr{ border-bottom:1px solid #e1e1e1;}
+.daoliang-detail table tr td{ line-height:30px; font-size:16px; color:#000000; padding:5px 0px; text-align:center;}
+
+
+
+/*分页*/
+.pub-pages{height:28px; font-size:14px; text-align:center; }
+.pub-pages a{ font-size:14px; display:inline-block; height:20px; line-height:20px; border:1px solid #d6cfd6; background:#f7f7f7; padding:3px 10px; color:#6a6a6a;}
+.pub-pages a:hover{ border:1px solid #09b0c3;  padding:3px 10px; color:white; font-size:14px; font-weight:400; background:#09b0c3;}
+.pub-pages strong{ display:inline-block; height:20px; line-height:20px; border:1px solid #09b0c3;  padding:3px 10px; color:white; font-size:14px; font-weight:400; background:#09b0c3}
+
+.pub-pages > .span01{ padding-left:50px;}
+.pub-pages .input01{font-size:12px; display:inline-block; height:20px; width:40px; line-height:18px; border:1px solid #d6cfd6; background:#f7f7f7; padding:3px 5px; color:#6a6a6a;}
+
+
+
+
+.select-group{ position:absolute; top:0px; left:100px;}
+.daoliang-content .title02 .select-group{ position:absolute; top:-2px; left:160px;}
+.select-group .select01 { display:inline-block;padding:3px 10px; font-size: 12px; line-height: 20px; color: #fff; vertical-align: middle; border: 1px solid #78d3ca; background:url(../images/sanjiao_bg01.png) no-repeat right center;  background-color:#0cb7bf; border-radius:5px; }
+.select-group .select01:focus{  background:url(../images/sanjiao_bg01.png) no-repeat right center;   background-color:#0cb7bf;}
+.select-group .select01 option:hover{ background:#0cb7bf;}
+
+
+
+
+/*贡献详情*/
+.gonxian-content{ padding:45px 20px 30px 40px;}
+
+.gonxian-content .title01{ height:30px; line-height:30px; color:#484848; font-size:16px; padding-left:35px; background:url(../images/icon03.jpg) no-repeat 0px 2px; position:relative;}
+.gonxian-content .title01 .select-group{ position:absolute; top:-2px; left:150px;}
+
+.gongxian-table01{ margin-left:24px; margin-top:30px; max-width:1307px; position:relative;}
+.daochu-btn{ display:inline-block; position:absolute; width:30px; height:34px; background:url(../images/icon06.jpg) no-repeat; top:-44px; right:5px;}
+.gongxian-table01 table tr th{ text-align:center; vertical-align:middle; height:50px; line-height:50px; background:#33323a; font-size:16px; color:#fff}
+
+.gongxian-table01 table tr th .wei-icon{ display:inline-block; width:20px; height:50px; background:url(../images/wen.png) no-repeat center center;}
+.gongxian-table01 table tr th .sort{ display:inline-block; width:10px; height:50px; background:url(../images/sort.png) no-repeat;}
+.gongxian-table01 table tr th .sort-nomal{ background-position:0px 17px;}
+.gongxian-table01 table tr th .sort-up{ background-position:-10px 17px;}
+.gongxian-table01 table tr th .sort-down{ background-position:-20px 17px;}
+
+.gongxian-table01 table{ border:1px solid #e1e1e1;}
+.gongxian-table01 table tr{}
+.gongxian-table01 table tr td{ border:1px solid #e1e1e1; line-height:30px; font-size:16px; color:#000000; padding:5px 0px; text-align:center; vertical-align:middle;}
+.gongxian-table01 table tr td .span-color01{ color:#2b9b2b;}
+.gongxian-table01 table tr td .span-color02{ color:#b40009;}
+.gongxian-table01 table tr td .span-color03{ color:#1f3aa3;}
+
+.gongxian-table01 table tr td .span-font01{ font-size:20px; color:#515151; padding:0px 10px; line-height:40px;}
+.gongxian-table01 table tr td .span-font02{ font-size:20px; color:#2b9b2b; padding:0px 10px; line-height:40px;}
+
+.gongxian-table01 .ptext01{ margin-top:25px;}
+.gongxian-table01 .ptext01 a{ font-size:16px; color:#2eb1a3; line-height:28px; font-weight:800;}
+.gongxian-table01 .ptext01 a:hover{ text-decoration:underline;}
+
+/*贡献给谁*/
+
+.gonxian-content .title02{ height:30px; line-height:30px; color:#484848; font-size:16px; padding-left:35px; background:url(../images/icon07.jpg) no-repeat 0px 1px; position:relative;}
+.gonxian-content .title02 .select-group{ position:absolute; top:-2px; left:170px;}
+
+.xiuzheng-gongxian-table02 table tr td{ border:1px solid #e1e1e1; line-height:40px; font-size:20px; color:#000000; padding:15px 0px; text-align:center; vertical-align:middle;}
+
+
+/*获取详情*/
+.huoqu-content{ padding:45px 20px 30px 40px;}
+.huoqu-content .title01{ height:40px; border-bottom:1px solid #b6b6b6; line-height:30px; color:#484848; font-size:16px; padding-left:35px; background:url(../images/icon03.jpg) no-repeat 0px 2px; position:relative;}
+.huoqu-content .title01 .select-group{ position:absolute; top:-2px; left:190px;}
+
+
+.tuijian-title01{ height:40px; margin-top:30px; position:relative;}
+.tuijian-title01 .title-text{ font-size:28px; color:#eb6e00; line-height:40px;}
+.huoqu-content .tuijian-title01 .select-group{ position:absolute; top:5px; left:120px;}
+
+
+.tuijian-imglist{min-width:1100px; max-width:1307px; position:relative;}
+.tuijian-imglist dl{ border-bottom:1px solid #b9b9b9; min-height:360px; position:relative;  margin-top:30px; }
+.tuijian-imglist dl dt{ position:absolute; left:0px; top:0px; }
+.tuijian-imglist dl dt .pbigimg{ width:270px; height:270px; border:1px solid #75747c; padding:5px;}
+.tuijian-imglist dl dt .pbigimg  .big-img{ display:inline-block; width:270px; height:270px; background-repeat:no-repeat; background-size:contain; background-position:center center;}
+.tuijian-imglist dl dt .ptitle{ margin-top:10px; font-size:16px; line-height:24px; color:#676767; text-align:center;}
+
+.tuijian-imglist dl dd{ margin-left:300px; padding-top:40px;}
+
+.zhuanhua-ullist01{}
+.zhuanhua-ullist01 li{ float:left; display:inline; height:96px; text-align:center; font-size:26px; color:#fff; line-height:96px;}
+.zhuanhua-ullist01 li .font01{ font-size:30px;}
+.zhuanhua-ullist01 li .font02{ font-size:40px;}
+.zhuanhua-ullist01 .li01{ width:25%; background:#575763;}
+.zhuanhua-ullist01 .li02{ width:50%; background:#33323a; position:relative;}
+.zhuanhua-ullist01 .li03{ width:25%; background:#575763;}
+.zhuanhua-ullist01 .li02 .liu_bg01{ position:absolute; display:block; height:96px; width:31px; left:0px; top:0px; background:url(../images/liu_bg01.jpg) no-repeat;}
+.zhuanhua-ullist01 .li02 .liu_bg02{ position:absolute; display:block; height:96px; width:31px; right:0px; top:0px; background:url(../images/liu_bg02.jpg) no-repeat;}
+.zhuanhua-ullist01 .li02 .pzong{ display:inline; position:relative; z-index:10;}
+
+
+.zhuanhua-ullist02{ margin-top:10px;}
+.zhuanhua-ullist02{ display:block; height:99px; border:1px solid #9b9b9b;}
+.zhuanhua-ullist02 li{ float:left; display:inline; height:97px; width:20%; font-size:20px; color:#535257; line-height:32px; padding:16px 0px; position:relative; }
+.zhuanhua-ullist02 li .liu_bg03{ position:absolute; display:block; height:99px; width:53px; left:-27px; top:-1px; background:url(../images/liu_bg03.jpg) no-repeat;}
+.zhuanhua-ullist02 .span-zhuhualu{ position:absolute; height:50px; line-height:50px; top:25px; right:10px; z-index:10; font-size:28px;}
+.zhuanhua-ullist02 p{ position:relative; z-index:10; padding-left:35px;}
+
+.zhuanhua-ullist02 li:last-child p{ text-align:center;}
+
+
+.tuijian-title02{ height:40px; margin-top:30px; position:relative;}
+.tuijian-title02 .title-text{ font-size:30px; color:#b3371b; line-height:40px;}
+.huoqu-content .tuijian-title02 .select-group{ position:absolute; top:5px; left:120px;}
+
+.huoqu-content .daochu-btn02{ display:inline-block; position:absolute; width:30px; height:34px; background:url(../images/icon06.jpg) no-repeat; top:3px; left:435px;}
+
+
+
+.daoliang-detail .daochu-btn{ display:inline-block; position:absolute; width:30px; height:34px; background:url(../images/icon06.jpg) no-repeat; top:-44px; right:5px;}
+
+

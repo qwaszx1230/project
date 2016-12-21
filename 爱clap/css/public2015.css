@@ -1,0 +1,69 @@
+@charset "utf-8";
+.hearder-box{ height:60px;}
+#hearder{ height:60px; background:rgba(255, 255, 255, 0.95);  box-shadow:0px 0px 6px rgba(0,0,0,.2); position:fixed; width:100%; top:0px; z-index:1000;}
+.hearder{ height:60px; width:1000px; margin:0px auto; position:relative;}
+.logo{ float:left; display:inline; width:87px; height:33px; margin-top:13px;}
+.nav{ float:left; display:inline-block; height:30px; margin-top:15px; margin-left:30px;}
+.nav ul li{ float:left; display: inline-block; padding:0px 15px;}
+.nav ul li a{ color: #333333; font-size:16px; line-height:30px; padding:0px 8px;}
+.nav ul li a:hover{color:#1087ed;}
+.nav ul li .active{color:#1087ed;}
+
+
+/*登陆注册按钮*/
+.landing_group{ position:absolute; right:10px; top:15px; height:30px; line-height:30px; color:#c8c8c8; font-size:14px;}
+.landing_group a{ display:inline-block; color:#333333; font-size:14px; padding:0px 12px; border-radius:3px;}
+.landing_group .landing-btn{ color:#333333;}
+.landing_group .landing-btn:hover{ color:#1087ed;}
+.landing_group .reg-btn{ background:#1087ed; color:#fff;}
+.landing_group .reg-btn:hover{ background:#007ae2; color:#fff;}
+
+
+/*登陆注册按钮*/
+.user_center{ position:absolute; right:0px; top:14px; height:32px;}
+.user_center a{ float:left; display:inline-block; height:32px; color:#333333; font-size:14px; line-height:32px; margin-right:5px; }
+.user_center .user_name img{ float:left; width:30px; height:30px; border:1px solid #cacaca; border-radius:32px; margin-right:5px;}
+.user_center .user_name .name_text{ margin-right:5px;}
+.user_center .company{ color:#333333; font-size:14px; line-height:32px; padding-left:10px; background:url(../images/fenxian.png) no-repeat left center; }
+
+/*公用分页*/
+.glo-pages{ text-align:center; position:relative; height:32px;}
+.glo-select-page{ position:absolute; right:10px; height:32px; font-size:16px; color:#848484;}
+.glo-select-page .page-input{ display:inline-block; padding:3px 10px; line-height:20px; border:1px solid #d2d8de; background:#fff;}
+.glo-pages .prev ,.glo-pages .next{ display:inline-block; width:100px; height:30px; line-height:30px; border:1px solid #d2d8de; background:#fff; color:#333333; border-radius:3px; margin:0px 44px;}
+.glo-pages .prev:hover ,.glo-pages .next:hover{ background:#1087ed; color:#fff;}
+
+/*公用分页*/
+.glo-view-more{ text-align:center;}
+.glo-view-more .more-btn{ display:inline-block; width:120px; height:35px; line-height:35px; border:1px solid #aaaaaa;
+ border-radius:3px; text-align:center; color:#333333; background:none; font-size:14px; font-weight:400;}
+.glo-view-more .more-btn:hover{ background:#fff;}
+
+/*底部*/
+.footer{width: 100%; background-color: #323234; }
+.footerbox{ width: 1130px;height:100%; height: 180px;  margin: 0 auto;}
+.footerbox ul{float: left;margin-top: 30px;}
+.footerbox ul li{height: 30px;font-size: 11.98px;color: #919191;line-height: 30px;position: relative;}
+.footerbox ul li h1{font-size: 16px;font-weight: bold;color: #efefef;}
+.footerbox ul li a{font-size: 11.98px;color: #919191;}
+.footerbox ul li a:hover{color: #f0f0f0;cursor: pointer;}
+.product{width: 240px;margin-left: 30px;}
+.iclap{width: 249px;}
+.contact{width: 309px;}
+.share a,.copy{display: inline-block;margin-right: 10px;width:22px;height:22px;background-image: url("images/register_share.png");background-repeat: no-repeat;margin-top: 8px;}
+.sina{background-position: 0px 0px;}
+.weibo{background-position: -27px 0px;}
+.tone{background-position: -54px 0px;}
+.copy{background-position: -80px 0px;position:absolute;top: -4px;left: 118px;}
+
+#friends_links{ background-color: #202126; height:48px; }
+.friends_links{width: 1100px;height:100%;margin: 0 auto; height:28px; padding:10px 0px; line-height:28px;}
+.friends_links strong{ font-size:14px; font-weight:800; color:#fff;  font-family:arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;}
+.friends_links a{ color:#919192;padding:0px 10px;  font-family:arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;} 
+.friends_links a:hover{ color:#fff; }
+.friends_links .more-btn{ font-weight:800; color:#b4b5b5;}
+
+
+
+
+

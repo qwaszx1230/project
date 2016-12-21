@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/*基本标签*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, img, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, hgroup, menu, nav, summary, time, mark, audio, video, header, footer { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; background: transparent }
+html { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup,/* img,*/ menu, nav, section, summary { display: block }
+ol, ul { list-style: none }
+b, strong { font-weight: bold }
+table { border-collapse: collapse; border-spacing: 0 }
+caption, th, td { text-align: left; font-weight: normal }
+img { image-rendering: optimizeQuality; -ms-interpolation-mode: bicubic; /*display: block; height: auto;*/ border: 0; vertical-align: middle }
+
+a { background: transparent; border: 0; font-size: 100%; margin: 0; padding: 0; vertical-align: baseline; -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease }
+a { text-decoration: none; color: #333333 }
+a:hover { text-decoration: none; }
+a:hover, a:focus, a:active { outline: 0 }
+
+html { font-size:10px; }
+body { font-size: 62.5%; font-size: 12px; /*font-size: 1.6rem;*/  -ms-word-break: break-all; -webkit-word-break: break-all; -moz-word-break: break-all; word-break: break-word; word-wrap: break-word; overflow-wrap: break-word; background: #fff; color: #747f8c; font-family:Arial, "Microsoft YaHei"; }
+
+/*form标签*/
+button, input, select, textarea { -webkit-appearance: none; font-size: 100%; margin: 0; padding: 0; border: none; outline: none; border-radius: 0; vertical-align: baseline; font-family:"Microsoft YaHei"; box-shadow:none; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button }
+button[disabled], input[disabled] { cursor: default }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0 }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+-webkit-appearance:none }
+button::-moz-focus-inner, input::-moz-focus-inner { border:0; padding:0 }
+textarea { overflow: auto; vertical-align: top; resize: none }
+input:focus, textarea:focus { outline: none }
+input::-ms-clear { display:none }
+[placeholder]:focus::-webkit-input-placeholder { -webkit-transition:opacity 0.5s ease; -moz-transition:opacity 0.5s ease; transition:opacity 0.5s ease; opacity:0 }
+[placeholder]:focus::-moz-input-placeholder { -webkit-transition:opacity 0.5s ease; -moz-transition:opacity 0.5s ease; transition:opacity 0.5s ease; opacity:0 }
+
+input::-webkit-input-placeholder { font-size:12px; color:#aeaeae } 
+input:-moz-placeholder { font-size:12px; color:#aeaeae } 
+input::-moz-placeholder { font-size:12px; color:#aeaeae }
+input:-ms-input-placeholder { font-size:12px; color:#aeaeae }
+
+::selection { background-color: #38485a; color: #fff; text-shadow: 0 1px 0 rgba(0,0,0,0.3) }
+::-moz-selection { background-color:#38485a; color:#fff; text-shadow:0 1px 0 rgba(0,0,0,0.3) }
+img::selection { background: transparent }
+img::-moz-selection { background:transparent }
+
+/*不常用标签*/
+blockquote, q { quotes: none }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none }
+[hidden] {display:none }
+abbr[title] { /*border-bottom: 1px dotted*/ }
+dfn { font-style: italic }
+mark { background: #ff0; color: #000 }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline }
+sup { top: -0.5em }
+sub { bottom: -0.25em }
+svg:not(:root) { overflow: hidden }
+figure { margin: 0 }
+video, object, embed, iframe { width: 100% }
+
+
+/*自定义公共样式*/
+.border-box, .border-box:before, .border-box:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box }
+.border-box-group , .border-box-group *, .border-box-group *:before, .border-box-group *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box }
+
+.font-one{ font-family:Arial, "Microsoft YaHei";}
+.font-two{ font-family:arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;}
+
+map,map area{outline:none;}
+
+
+.clear{ clear:both;}
+.clearfix{zoom:1;}
+.clearfix:after{display:block;clear:both;visibility:hidden;height:0;content:'';}
+.none{ display:none;}
+.border-none{ border:none !important;}
+.fl{ float:left;}
+.fr{ float:right;}
+.glo_a{ color:#0085d0;}
+.glo_a:hover{ color:#8dc11e;}

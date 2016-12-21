@@ -1,0 +1,110 @@
+@charset "utf-8";
+body{ background-color:#f0f4f7;}
+/*banner*/
+.help-banner{ background:#3b454b; }
+.help-banner-title{ width:1000px; margin:0px auto; padding-top:60px; text-align:center;}
+
+/*常见问题*/
+.help-wenti{ width:1000px; margin:0px auto; margin-top:20px;}
+
+.question-search{ width:800px; margin:0px auto; border-radius:4px; overflow:hidden; position:relative; }
+.question-search:before{ width:800px; height:50px; box-shadow:0px 0px 3px 1px rgba(12,51,76,.17) inset; position: absolute; content: "";
+ left:0px; top:0px;  z-index:80; }
+
+.question-search .fl{ float:left; display:inline; width:630px; height:30px; padding:10px 0px; background:url(../images/help_search.png) no-repeat 15px center; padding-left:50px;  background-color:#fff; }
+.question-search .fl input{ height:20px; line-height:20px; padding:5px; position:relative; z-index:100;}
+.question-search .fr{ float:right; display:inline; margin-right:0px; margin-top:0px; width:120px; height:50px; position:relative; z-index:100;}
+.question-search .fr .submit-btn{ display:inline-block; width:120px; border-radius:0px 4px 4px 0px; height:50px; padding:10px 0px; line-height:30px; font-size:20px; font-weight:400; color:#fff; text-align:center; background:#1087ed; font-family:Arial,'Microsoft YaHei';  letter-spacing:1px;}
+.question-search .fr .submit-btn:hover{ background:#0a73cd;}
+.help-wenti .question-search{ margin-top:20px;}
+
+.glo-view-more{ text-align:left;}
+
+.help-wenti .h2-title{ height:44px;  border-bottom:1px solid #d2d8de;}
+.help-wenti .h2-title strong{line-height:38px; font-size:18px; font-weight:800; color:#333333;}
+.help-wenti .h2-title a{ float:right; display:inline; line-height:12px; font-size:12px; padding-top:15px; color:#1087ed;font-family:'Hiragino Sans GB',\5b8b\4f53,sans-serif;}
+.help-wenti .h2-title a:hover{ color:#026ac4;}
+/*问题列表*/
+.help-wenti-list{ margin-top:18px; margin-bottom:30px;}
+.help-wenti-list li{ float:left; width:450px; height:24px; line-height:24px; padding:8px 25px 8px 15px; background:url(../images/help_dian.png) no-repeat left center; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;}
+.help-wenti-list li a{ font-size:12px; color:#646464;}
+.help-wenti-list li a:hover{ font-size:12px; color:#1087ed;}
+.xian{width:1000px; margin:0px auto; height:20px; border-bottom:1px solid #e2e9ef;}
+
+
+/*视频帮助*/
+.video-help{ width:1000px; margin:0px auto; margin-top:20px; overflow:hidden}
+.video-help .h2-title{ height:44px; line-height:38px; font-size:18px; font-weight:800; color:#333333; border-bottom:1px solid #d2d8de;}
+.video-help-list{ width:1000px; margin:0px auto; border-bottom:1px dashed #d2d8de; padding-bottom:16px;}
+.video-help-list li{ float:left; display:inline; width:224px; height:160px; margin-left:34px; margin-top:16px;}
+.video-help-list li:first-child{ margin-left:1px;}
+.video-help-list li .pimg{ width:224px; height:120px; position:relative;}
+video-help-list li .pimg a{ display:block; width:224px; height:120px; position:relative; border-radius:2px;}
+.video-help-list li .pimg a:before{ position: absolute; content: ""; left:0px; top:0px; width:224px; height:120px;  z-index:10;
+ -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease ;  background:url(../images/help/video_icon3.png) no-repeat center center;}
+.video-help-list li .pimg a:hover:before{ background:rgba(0,0,0,0.3) url(../images/help/video_icon.png) no-repeat center center;}
+.video-help-list li .pimg a img{width:224px; height:120px;}
+.video-help-list li .ptext {display:block; margin-top:8px; width:224px; text-align:center; height:24px; line-height:24px;  color:#333; font-size:14px; overflow:hidden;}
+
+
+.video-help-list .li01 .pimg a:hover:before{ background:rgba(52,148,237,0.7) url(../images/help/video_icon.png) no-repeat center center;}
+.video-help-list .li02 .pimg a:hover:before{ background:rgba(0,188,212,0.7) url(../images/help/video_icon.png) no-repeat center center;}
+.video-help-list .li03 .pimg a:hover:before{ background:rgba(86,188,78,0.7) url(../images/help/video_icon.png) no-repeat center center;}
+.video-help-list .li04 .pimg a:hover:before{ background:rgba(226,215,119,0.7) url(../images/help/video_icon.png) no-repeat center center;}
+.video-help-list .li05 .pimg a:hover:before{ background:rgba(30,92,169,0.7) url(../images/help/video_icon.png) no-repeat center center;}
+
+.video-help .h3-title{ height:28px; line-height:28px; font-size:16px; font-weight:400; color:#333333; padding-left:36px;}
+.video-help .h3-title01{ background:url(../images/help/video_icon01.png) no-repeat 1px 1px; margin-top:19px;}
+.video-help .h3-title02{ background:url(../images/help/video_icon02.png) no-repeat 1px 1px; margin-top:19px;}
+.video-help .h3-title03{ background:url(../images/help/video_icon03.png) no-repeat 1px 1px; margin-top:19px;}
+
+/*视频帮助01*/
+.video-help-list02{ width:1000px; margin:0px auto;}
+.video-help-list02 li{ float:left; display:inline; width:154px; height:259px; margin-left:57px; margin-top:16px;}
+.video-help-list02 li:first-child{ margin-left:1px;}
+.video-help-list02 li .pimg{ width:154px; height:219px; position:relative;}
+.video-help-list01 li .pimg a{ display:block; width:154px; height:219px; position:relative; border-radius:2px;}
+.video-help-list02 li .pimg a:before{ position: absolute; content: ""; left:0px; top:0px; width:154px; height:219px;  z-index:10;
+ -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; background:url(../images/help/video_icon4.png) no-repeat center center; }
+.video-help-list02 li .pimg a:hover:before{ background:rgba(0,0,0,0.3) url(../images/help/video_icon2.png) no-repeat center center;}
+.video-help-list02 li .pimg a img{width:154px; height:219px;}
+.video-help-list02 li .ptext {display:block; margin-top:8px; width:154px; text-align:center; height:24px; line-height:24px;  color:#333; font-size:14px; overflow:hidden;}
+
+.video-help-list02 .li01 .pimg a:hover:before{ background:rgba(137,170,231,0.7) url(../images/help/video_icon2.png) no-repeat center center;}
+.video-help-list02 .li02 .pimg a:hover:before{ background:rgba(190,174,99,0.7) url(../images/help/video_icon2.png) no-repeat center center;}
+.video-help-list02 .li03 .pimg a:hover:before{ background:rgba(169,145,202,0.7) url(../images/help/video_icon2.png) no-repeat center center;}
+.video-help-list02 .li04 .pimg a:hover:before{ background:rgba(225,142,136,0.7) url(../images/help/video_icon2.png) no-repeat center center;}
+.video-help-list02 .li05 .pimg a:hover:before{ background:rgba(86,195,173,0.7) url(../images/help/video_icon2.png) no-repeat center center;}
+
+
+/*联系客服*/
+.contact-kefu{  width:1000px; margin:0px auto; margin-top:22px; margin-bottom:30px;}
+.contact-kefu .h2-title{ height:44px; line-height:38px; font-size:18px; font-weight:800; color:#333333; border-bottom:1px solid #d2d8de;}
+.kefu-text{font-size:14px; font-weight:400; color:#848484; line-height:24px; margin-top:15px; text-align:left;}
+.kefu-group{ width:1000px; margin:0px auto; margin-top:18px;}
+.kefu-group li{ float:left; display:inline; width:250px; text-align:left;}
+.kefu-group li span{ display:inline-block; padding-left:40px;  font-size:18px; line-height:38px; font-weight:400; color:#333333;}
+.kefu-group li .phone{ background:url(../images/help_icon02.png) no-repeat 5px center;}
+.kefu-group li .qq{ background:url(../images/help_icon03.png) no-repeat  5px center;}
+.kefu-group li .email{ background:url(../images/help_icon04.png) no-repeat left center;}
+
+
+/*常见问题*/
+
+#question-search{ height:50px; padding:46px 0px; background:#3b454b;}
+
+.changjian-question{ width:1000px; margin:0px auto; margin-top:10px;  padding-bottom:50px;}
+.changjian-question .h1-title{ display:block; font-size:20px; line-height:40px; color:#1087ed; font-weight:800; padding:10px 0px; border-bottom:1px solid #d2d8de;}
+.question-list{}
+.question-list li{ border-bottom:1px solid #d2d8de; padding:14px 20px;}
+.question-list li .h2-title{}
+.question-list li .h2-title a{ display:block;  font-size:18px; color:#333333; line-height:30px; background:url(../images/dian_bg.png) no-repeat -1px 10px; padding-left:20px;}
+.question-list li .h2-title a:hover{ background:url(../images/dian_sbg.png) no-repeat -1px 10px; color:#1087ed;}
+.question-list li .ptext{ display:none; padding:0px 20px; line-height:24px; font-size:14px; color:#333333; margin-top:9px;}
+
+.question-list .active{ background:#fff;}
+
+
+.so-results{ padding:10px 10px; font-size:16px; line-height:36px; color:#333333; border-bottom:1px solid #d2d8de;}
+.so-results .num{ font-size:24px;}
+.so-results .keywords{ font-size:18px; color:#1087ed; padding:0px 5px;}

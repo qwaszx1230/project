@@ -1,0 +1,32 @@
+@charset "utf-8";
+body{ background-color:#f1f4f6;}
+
+/*banner*/
+.forget-banner{ height:220px; background:#32425c; background:url(../images/forget_banner.png) no-repeat top center;}
+
+.main{ width:300px; margin:0px auto; padding:20px 0px;}
+.main-list{}
+.main-list li{ text-align:center;}
+.main-list li h1{ font-size:16px; color:#333333; font-weight:800; line-height:26px;}
+.main-list .pinput{ padding:15px 0px;}
+.main-list .pinput .input01{ padding:10px  5px; font-size:14px; height:20px; line-height: 20px; color: #848484; vertical-align: middle; background-color: #fff; background-image: none; border: 1px solid #ced0d1; border-radius:2px;}
+.main-list .pinput .input01:focus{ background:#f1f4f6; color:#333333; }
+
+.main-list .active .input01{ padding:10px  5px; font-size:14px; height:20px; line-height: 20px; background:#f1f4f6; color:#333333; vertical-align: middle;  background-image: none; border: 1px solid #ced0d1; border-radius:2px;}
+
+.main-list{ margin-top:25px;}
+.main-list .pinput .submit-btn{ -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; display:inline-block; width:300px; height:42px; line-height:42px; border-radius:5px; text-align:center; color:#fff; background:#1087ed; font-size:18px; font-weight:400;}
+.main-list .pinput .submit-btn:hover{ background:#057bdf;}
+
+.main-list .ptext01{ line-height:24px; color:#848484; font-size:14px; text-align:center;}
+.main-list .ptext .span-color01{ color:#1087ed;}
+
+.main-list .ptext02{ line-height:24px; color:#848484; font-size:14px; text-align:center; padding-top:10px;}
+.main-list .ptext02 a{ color:#1087ed;}
+.main-list .ptext02 a:hover{ color:#0376d8;}
+
+
+
+
+
+

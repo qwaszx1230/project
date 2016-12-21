@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>帮助</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<link rel="stylesheet" type="text/css" href="css/globle2014.css"/>
+<link rel="stylesheet" type="text/css" href="css/public2015.css"/>
+<link rel="stylesheet" type="text/css" href="css/help.css"/>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!--弹窗-->
+<link rel="stylesheet" type="text/css" href="css/popup.css"/>
+<script type="text/javascript" src="js/popup.js"></script>
+
+<script type="text/javascript" src="js/player.js"></script> 
+<script type="text/javascript">
+	$(function(){
+		$(".video-help-list").on("click","li a",function(){
+			var className = $(this).parents("li").attr("class");
+			if( className =="li01" ){
+				var file_name = "iclap_1";
+			}else if( className =="li02" ){
+				var file_name = "iclap_2";
+			}else if( className =="li03" ){
+				var file_name = "iclap_3";
+			}else{
+				var file_name = "iclap_4";
+			}
+			var link_file = "http://ds.iclap.cn/iclap/viedo/"+ file_name +".mp4";
+			
+			jwplayer("flvplayer").setup({
+				flashplayer: "video/player.swf",
+				file: link_file,
+				image: "images/help/video_bg.jpg",
+				width:1130,
+				height:661,
+				autoplay:true,
+				repeat:"none",
+				controlbar:"",
+				wmode:"transparent"
+			});
+			$(".video-help-popup").popupFn();
+		});
+		
+	}); 
+</script> 
+</head>
+<body>
+
+<!--视频弹窗-->
+<div class="ui-popup video-help-popup" style="display:none;">
+  <div class="ui-popup_box">
+    <div class="video_close_box"><a href="javascript:;" class="video_close pop_close">&nbsp;</a></div>
+    <div class="video-help-content">
+    <div id="flvplayer00">
+      <div id="flvplayer"></div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="ui-mask"></div>
+
+
+<div class="hearder-box"></div>
+<div id="hearder">
+  <div class="hearder clearfix">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div class="nav">
+      <ul class="clearfix">
+        <li><a href="01首页.html">首页</a></li>
+        <li><a href="02功能.html">功能</a></li>
+        <li><a href="03下载.html">下载</a></li>
+        <li><a href="04旗舰版.html">旗舰版</a></li>
+        <li><a href="05案例.html">案例</a></li>
+        <li><a href="06帮助.html" class="active">帮助</a></li>
+      </ul>
+      <!--登陆注册按钮-->
+      <div class="landing_group"> <a href="#" class="landing-btn">登录</a> &nbsp;<a href="#" class="reg-btn">免费注册</a></div>
+    </div>
+  </div>
+</div>
+<div class="help-banner">
+  <div class="help-banner-title"><img src="images/help/help_ask_img.png" width="238" height="48" alt=" "></div>
+  <div id="question-search">
+    <div class="question-search">
+      <div class="fl">
+        <input type="text" placeholder="请输入搜索内容" style="width:550px;" value="任务">
+      </div>
+      <div class="fr">
+        <button type="submit" class="submit-btn">搜索</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="help-wenti">
+  <h2 class="h2-title"><a href="#">更多>></a><strong>常见问题</strong></h2>
+  <ul class="help-wenti-list clearfix font-two">
+    <li><a href="#">PC端基础常见问题汇总</a></li>
+    <li><a href="#">各流程是不是审批结束后都可以联机打印出来呢各流程是不是审批结束后都可以联机打印出来呢？</a></li>
+    <li><a href="#">如何申请关注其他同事以及了解他们的工作分享</a></li>
+    <li><a href="#">PC端基础常见问题汇总</a></li>
+    <li><a href="#">各流程是不是审批结束后都可以联机打印出来呢？</a></li>
+    <li><a href="#">如何申请关注其他同事以及了解他们的工作分享</a></li>
+    <li><a href="#">PC端基础常见问题汇总</a></li>
+    <li><a href="#">各流程是不是审批结束后都可以联机打印出来呢？</a></li>
+    <li><a href="#">如何申请关注其他同事以及了解他们的工作分享</a></li>
+    <li><a href="#">PC端基础常见问题汇总</a></li>
+  </ul>
+</div>
+<div class="video-help">
+  <h2 class="h2-title"><strong>视频帮助</strong></h2>
+  <h3 class="h3-title h3-title01">iClap 教程演示：</h3>
+  <ul class="video-help-list clearfix font-two">
+    <li class="li05">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_pic01.png" width="224" height="120"  /></a></p>
+      <p class="ptext">如何使用iClap产品管理</p>
+    </li>
+  </ul>
+  <h3 class="h3-title h3-title02">iClap PC端演示：</h3>
+  <ul class="video-help-list clearfix font-two">
+    <li class="li01">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_help01.png" width="224" height="120"  /></a></p>
+      <p class="ptext">注册与登录</p>
+    </li>
+    <li class="li02">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_help02.png" width="224" height="120"  /></a></p>
+      <p class="ptext">如何创建项目? </p>
+    </li>
+    <li class="li03">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_help03.png" width="224" height="120"  /></a></p>
+      <p class="ptext">主工作台演示</p>
+    </li>
+    <li class="li04">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_help04.png" width="224" height="120"  /></a></p>
+      <p class="ptext">我的公司演示</p>
+    </li>
+  </ul>
+  <h3 class="h3-title h3-title03">iClap 移动端演示：</h3>
+  <ul class="video-help-list02 clearfix font-two">
+    <li class="li05">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_pic06.png" width="154" height="219"  /></a></p>
+      <p class="ptext">iClap的批注管理演示</p>
+    </li>
+    <li class="li02">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_pic03.png" width="154" height="219"  /></a></p>
+      <p class="ptext">我的APP演示 </p>
+    </li>
+    <li class="li03">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_pic04.png" width="154" height="219"  /></a></p>
+      <p class="ptext">如何添加成员</p>
+    </li>
+    <li class="li01">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_pic02.png" width="154" height="219"  /></a></p>
+      <p class="ptext">如何创建聊天？</p>
+    </li>
+    <li class="li04">
+      <p class="pimg"><a href="javascript:;"><img src="images/help/video_pic05.png" width="154" height="219"  /></a></p>
+      <p class="ptext">iClap的任务管理演示</p>
+    </li>
+  </ul>
+</div>
+
+<!--联系客服-->
+<div class="contact-kefu">
+  <h2 class="h2-title">联系客服</h2>
+  <p class="kefu-text">没有找到你遇到的问题或答案？联系客服获取帮助吧~</p>
+  <ul class="kefu-group clearfix">
+    <li><span class="phone">400-680-9951</span> </li>
+    <li><span class="email">service@iclap.cn</span> </li>
+  </ul>
+</div>
+<div class="footer">
+  <div class="footerbox">
+    <ul class="product">
+      <li>
+        <h1>产品</h1>
+      </li>
+      <li><a href="#">DevStore</a></li>
+      <li><a href="#">iClap</a></li>
+    </ul>
+    <ul class="iclap">
+      <li>
+        <h1>iClap</h1>
+      </li>
+      <li><a href="#">企业版</a></li>
+      <li><a href="#">案例</a></li>
+      <li><a href="#">帮助</a></li>
+      <li><a href="#">隐私政策</a></li>
+      <li><a href="#">服务条款</a></li>
+    </ul>
+    <ul class="contact">
+      <li>
+        <h1>联系我们</h1>
+      </li>
+      <li class="share"> <a class="sina" href="#"></a> <a class="weibo" href="#"></a> <a class="tone" href="#"></a> </li>
+      <li>客服QQ：1931358744</li>
+      <li>开发者交流群：367554077</li>
+      <li>运营交流群：344895847</li>
+      <li>产品交流群：58064712</li>
+    </ul>
+    <ul class="copyright">
+      <li>
+        <h1>版权所有</h1>
+      </li>
+      <li>深圳尺子科技有限公司</li>
+      <li>深圳市南山区高新园科技南十二路方大大厦603</li>
+      <li>Copyright © 2014 DevStore. All Rights Reserved</li>
+      <li>粤ICP备14013517号<a class="copy"></a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset "utf-8";
+/*banner*/
+.case-banner{ height:250px; background:url(../images/case_banner.jpg) no-repeat top center; padding-top:93px; text-align:center; color:#fff; font-size:38px; line-height:58px; font-weight:800;}
+
+/*分类*/
+.case-fenlei{ width:1000px; margin:0px auto; padding-top:60px;}
+.case-fenlei ul li{ float:left; display:inline; height:374px; width:332px; border:1px solid #e6e6e6; margin-left:-1px; position:relative;}
+.case-fenlei ul li{ display:block; width:252px;  height:344px; padding:30px 40px 0px 40px; }
+/*.case-fenlei ul li a:hover{ background:#f6f6f6;}
+.case-fenlei ul li:hover a{ background:#f6f6f6;}*/
+
+.case-fenlei ul li:first-child{ margin-left:0px;}
+.case-fenlei ul li .ptitle{ text-align:center; font-size:30px; line-height:50px; font-weight:800; color:#333333; height:50px;  overflow:hidden;}
+.case-fenlei ul li .pimg{ margin-top:15px; text-align:center;}
+.case-fenlei ul li .ptext{ margin-top:15px; font-size:12px; line-height:22px; color:#5e5e5e; max-height:88px; overflow:hidden; font-family:arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;}
+
+/*部分支持用户*/
+.case-zhichi{ width:954px; margin:0px auto; margin-top:60px; margin-bottom:60px;}
+.case-zhichi .title{ font-size:24px; color:#333333; line-height:44px; font-weight:800; margin-bottom:20px;}
+.case-zhichi ul{}
+.zhichikehu-list li{ float:left; display:inline; width:189px; height:135px; border:1px solid #e1e1e1; border-right:none; position:relative; margin-top:-1px;}
+.zhichikehu-list li:first-child{ border-left:none;}
+.zhichikehu-list li a{ display:table-cell; width:198px; height:135px; text-align:center; vertical-align:middle;}
+.zhichikehu-list li a:hover{ background:#f6f6f6;}
+.zhichikehu-list li:hover a{ background:#f6f6f6;}
+
+
+
+
+
+
+
+
+
+

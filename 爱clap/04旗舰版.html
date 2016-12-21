@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>旗舰版</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<link rel="stylesheet" type="text/css" href="css/globle2014.css"/>
+<link rel="stylesheet" type="text/css" href="css/public2015.css"/>
+<link rel="stylesheet" type="text/css" href="css/flagship.css"/>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".flagship-nav li .a01-btn").click(function(){
+		var goTop01 = $(".bushu .pub-title").offset().top-60;
+		$('html,body').animate({scrollTop:goTop01},800);
+	});
+	$(".flagship-nav li .a02-btn").click(function(){
+		var goTop01 = $(".zhuanshu .pub-title").offset().top-60;
+		$('html,body').animate({scrollTop:goTop01},800);
+	});
+	$(".flagship-nav li .a03-btn").click(function(){
+		var goTop01 = $(".jiance .pub-title").offset().top-60;
+		$('html,body').animate({scrollTop:goTop01},800);
+	});
+	$(".flagship-nav li .a04-btn").click(function(){
+		var goTop01 = $(".more-fuwu .pub-title").offset().top-60;
+		$('html,body').animate({scrollTop:goTop01},800);
+	});
+	$(".flagship-nav li .a05-btn").click(function(){
+		var goTop01 = $(".pingtai-zhichi .pub-title").offset().top-60;
+		$('html,body').animate({scrollTop:goTop01},800);
+	});
+	
+})
+</script>
+<!--弹窗-->
+<link rel="stylesheet" type="text/css" href="css/popup.css"/>
+<script type="text/javascript" src="js/popup.js"></script>
+<script>
+$(function(){
+	$(".shenqing-btn").click(function(){
+		$(".shenqing-form-popup").popupFn();
+	});
+});
+</script>
+</head>
+<body>
+
+<!--申请试用 已登陆-->
+<div class="ui-popup shenqing-form-popup" style="display:none;">
+  <div class="ui-popup_box">
+    <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+    <div class="shenqing-form">
+      <h2 class="h2-title font-one">申请试用</h2>
+      <div class="shenqing-form-content">
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td width="68">姓名</td>
+              <td><input type="text" class="input01" style="width:288px;" placeholder="请输入您的姓名"></td>
+            </tr>
+            <tr>
+              <td>电话</td>
+              <td>
+              <span class="span-text">15739252365</span>
+              </td>
+            </tr>
+            <tr>
+              <td>公司名称</td>
+              <td><input type="text" class="input01" style="width:288px;" placeholder="请填写您的公司名称"></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center"><a href="#" class="submit-btn">提交</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!--申请试用 申请成功-->
+<div class="ui-popup shenqing-success-popup" style="display:none;">
+  <div class="ui-popup_box">
+    <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+    <div class="shenqing-success-box">
+      <h2 class="h2-title font-one">恭喜您！申请成功~</h2>
+      <div class="shenqing-success-content  font-one">
+        <p class="ptext01"> 您在iClap提交的申请试用，已经申请成功啦！<br>
+          稍后客服MM会联系您哦~<br>
+          请您耐心等待~<br>
+        </p>
+        <p class="pbtn01"><a href="#" class="submit-btn">确定</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--申请试用 未登陆 登陆-->
+<div class="ui-popup landing-popup" style="display:none;">
+  <div class="ui-popup_box">
+    <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+    <div class="landing-box">
+      <h2 class="h2-title font-one">请您先登录哦~</h2>
+      <div class="landing-content">
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td width="100">&nbsp;</td>
+              <td><span class="span-shuoming font-one">可以使用DevStore账号同步登录</span>
+                <div class="tishi-box">账号或者密码错误！</div></td>
+            </tr>
+            <tr class="tr02">
+              <td width="100"><span class="label-name">邮箱/手机号</span></td>
+              <td><input type="text" class="input01" style="width:288px;" placeholder="请输入您的姓名"></td>
+            </tr>
+            <tr class="tr03">
+              <td><span class="label-name">密码</span></td>
+              <td><input type="text" class="input01" style="width:288px;" placeholder="请输入您的电话号码">
+                <a href="#" class="forgot-password">忘记密码？</a></td>
+            </tr>
+            <tr class="tr04">
+              <td colspan="2" class="text-center"><div class="btn-group">
+                  <p class="pbtn01"><a href="#" class="submit-btn">登陆</a></p>
+                  <p class="ptext01">还没有账号？<a href="#">免费注册</a></p>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!--申请试用 未登陆 注册-->
+<div class="ui-popup reg-popup" style="display:none;">
+  <div class="ui-popup_box">
+    <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+    <div class="reg-box">
+      <h2 class="h2-title font-one">注册</h2>
+      <div class="reg-content">
+        <table width="100%" border="0">
+          <tbody>
+            <tr class="tr01">
+              <td width="100"><span class="label-name">手机号</span></td>
+              <td><div class="div-box">
+                  <input type="text" class="input01" style="width:288px;" placeholder="请输入您的手机号">
+                  <div class="tishi_box01">请输入正确的手机号码格式！</div>
+                </div></td>
+            </tr>
+            <tr class="tr02">
+              <td><span class="label-name">验证码</span></td>
+              <td><div class="verification-box clearfix">
+                  <div class="fl">
+                    <input type="text" class="input01" style="width:163px;" placeholder="请输入验证码">
+                  </div>
+                  <div class="fr"><a href="#">获取短信验证码</a></div>
+                </div></td>
+            </tr>
+            <tr class="tr03">
+              <td><span class="label-name">密码</span></td>
+              <td><div class="div-box01">
+                  <div class="tishi-box02">&nbsp;</div>
+                  <input type="text" class="input01" style="width:288px;" placeholder="2-20个字符 ,仅支持中英文 ,数字 ,下划线">
+                </div>
+                <div class="div-box02">
+                  <p class="tishi-box03">仅支持英文、数字、下划线，请您重新填写~</p>
+                  <p class="tiaokuan-text">点击注册，即同意iclap<a href="#">《服务条款》</a>和<a href="#">《隐私条款》</a></p>
+                </div></td>
+            </tr>
+            <tr class="tr04">
+              <td colspan="2" class="text-center"><div class="btn-group">
+                  <p class="pbtn01"><a href="#" class="submit-btn">注册</a></p>
+                  <p class="ptext01">已有账号？<a href="#">立即登录</a></p>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!--申请试用 已注册 绑定手机-->
+<div class="ui-popup bangding-phone-popup" style="display: block;">
+  <div class="ui-popup_box">
+    <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+    <div class="reg-box">
+      <h2 class="h2-title font-one">请您绑定手机号</h2>
+      <div class="reg-content">
+        <table width="100%" border="0">
+          <tbody>
+            <tr class="tr01">
+              <td width="100"><span class="label-name">手机号</span></td>
+              <td><div class="div-box">
+                  <input type="text" class="input01" style="width:288px;" placeholder="请输入您的手机号">
+                  <div class="tishi_box01">请输入正确的手机号码格式！</div>
+                </div></td>
+            </tr>
+            <tr class="tr02">
+              <td><span class="label-name">验证码</span></td>
+              <td><div class="verification-box clearfix">
+                  <div class="fl">
+                    <input type="text" class="input01" style="width:163px;" placeholder="请输入验证码">
+                  </div>
+                  <div class="fr"><a href="#">获取短信验证码</a></div>
+                </div></td>
+            </tr>
+            <tr class="tr05">
+              <td colspan="2" class="text-center"><div class="btn-group">
+                  <p class="pbtn01"><a href="#" class="submit-btn">注册</a></p>
+                </div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui-mask"></div>
+<div class="hearder-box"></div>
+<div id="hearder">
+  <div class="hearder clearfix">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div class="nav">
+      <ul>
+        <li><a href="01首页.html">首页</a></li>
+        <li><a href="02功能.html">功能</a></li>
+        <li><a href="03下载.html">下载</a></li>
+        <li><a href="04旗舰版.html" class="active">旗舰版</a></li>
+        <li><a href="05案例.html">案例</a></li>
+        <li><a href="06帮助.html">帮助</a></li>
+      </ul>
+      <!--登陆注册按钮-->
+      <div class="landing_group"> <a href="#" class="landing-btn">登录</a> &nbsp;<a href="#" class="reg-btn">免费注册</a></div>
+    </div>
+  </div>
+</div>
+<div class="flagship-banner">
+  <p class="pbtn"><a href="javascript:;" class="shenqing-btn">申请试用</a></p>
+  <ul class="flagship-nav clearfix">
+    <li><a href="javascript:;" class="a01-btn"><img src="images/flagship_img01.png" width="87" height="87"  /></a></li>
+    <li><a href="javascript:;" class="a02-btn"><img src="images/flagship_img02.png" width="87" height="87"  /></a></li>
+    <li><a href="javascript:;" class="a03-btn"><img src="images/flagship_img03.png" width="87" height="87"  /></a></li>
+    <li><a href="javascript:;" class="a04-btn"><img src="images/flagship_img04.png" width="87" height="87"  /></a></li>
+    <li><a href="javascript:;" class="a05-btn"><img src="images/flagship_img05.png" width="87" height="87"  /></a></li>
+  </ul>
+</div>
+<!--服务器私有部署-->
+<div class="miaoshu bushu">
+  <h2 class="pub-title">服务器私有部署</h2>
+  <p class="pub-ptext">专业实施人员进行服务器私有部署，所有数据、文档资料全部存储在自己的服务器，安全级别更高</p>
+  <p class="pub-pimg"><img src="images/flagship_img06.png" width="706" height="396"  /></p>
+</div>
+<!--旗舰版专属-->
+<div class="miaoshu zhuanshu">
+  <h2 class="pub-title">旗舰版专属</h2>
+  <ul class="zhuanshu-list clearfix">
+    <li>
+      <p class="pimg"><img src="images/flagship_img07.png" width="158" height="120"  /></p>
+      <p class="ptext">专属域名</p>
+    </li>
+    <li>
+      <p class="pimg"><img src="images/flagship_img08.png" width="158" height="120"  /></p>
+      <p class="ptext">专属客服</p>
+    </li>
+    <li>
+      <p class="pimg"><img src="images/flagship_img09.png" width="158" height="120"  /></p>
+      <p class="ptext">专属批注测试</p>
+    </li>
+    <li>
+      <p class="pimg"><img src="images/flagship_img10.png" width="158" height="120"  /></p>
+      <p class="ptext">专属技术支持</p>
+    </li>
+  </ul>
+</div>
+<div class="miaoshu jiance">
+  <h2 class="pub-title">高级检测</h2>
+  <p class="pub-ptext">安全漏洞定制检测服务，支持程序机密性检测、组件安全检测、数据安全检测及其他安全检测内容</p>
+  <p class="pub-pimg"><img src="images/flagship_img11.png" width="386" height="357"  /></p>
+  <p class="pub-pbtn"><a href="#" class="button01-btn">立即检测</a></p>
+</div>
+<div class="miaoshu more-fuwu">
+  <h2 class="pub-title">更多企业级插件服务</h2>
+  <p class="pub-ptext">可免费或者以优惠价格获取更多的企业级插件，管理更加便捷，服务更加周到</p>
+  <p class="pub-pimg"><img src="images/flagship_img12.png" width="336" height="308"  /></p>
+</div>
+<div class="miaoshu pingtai-zhichi">
+  <h2 class="pub-title">平台支持</h2>
+  <!--联系客服-->
+  <ul class="pingtai-zhichi-list clearfix">
+    <li>
+      <p>项目首页展示</p>
+      <img src="images/flagship_img13.png" width="240" height="160"  /></li>
+    <li>
+      <p>公司团队采访</p>
+      <img src="images/flagship_img14.png" width="240" height="160"  /></li>
+    <li>
+      <p>线下沙龙推广</p>
+      <img src="images/flagship_img15.png" width="240" height="160"  /></li>
+  </ul>
+  <!--联系客服-->
+  <div class="kefu-box">
+    <h2 class="title">联系咨询</h2>
+    <ul class="kefu-group clearfix">
+      <li><span class="phone">400-680-9951</span> </li>
+      <li><span class="qq">2853508922</span> </li>
+      <li><span class="email">support@devstore.cn</span> </li>
+    </ul>
+  </div>
+</div>
+<div class="footer">
+  <div class="footerbox">
+    <ul class="product">
+      <li>
+        <h1>产品</h1>
+      </li>
+      <li><a href="#">DevStore</a></li>
+      <li><a href="#">iClap</a></li>
+    </ul>
+    <ul class="iclap">
+      <li>
+        <h1>iClap</h1>
+      </li>
+      <li><a href="#">企业版</a></li>
+      <li><a href="#">案例</a></li>
+      <li><a href="#">帮助</a></li>
+      <li><a href="#">隐私政策</a></li>
+      <li><a href="#">服务条款</a></li>
+    </ul>
+    <ul class="contact">
+      <li>
+        <h1>联系我们</h1>
+      </li>
+      <li class="share"> <a class="sina" href="#"></a> <a class="weibo" href="#"></a> <a class="tone" href="#"></a> </li>
+      <li>客服QQ：1931358744</li>
+      <li>开发者交流群：367554077</li>
+      <li>运营交流群：344895847</li>
+      <li>产品交流群：58064712</li>
+    </ul>
+    <ul class="copyright">
+      <li>
+        <h1>版权所有</h1>
+      </li>
+      <li>深圳尺子科技有限公司</li>
+      <li>深圳市南山区高新园科技南十二路方大大厦603</li>
+      <li>Copyright © 2014 DevStore. All Rights Reserved</li>
+      <li>粤ICP备14013517号<a class="copy"></a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

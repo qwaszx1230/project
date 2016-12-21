@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<link rel="stylesheet" type="text/css" href="css/globle2014.css"/>
+<link rel="stylesheet" type="text/css" href="css/public2015.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+$(function(){
+	//首页第一屏指针
+    $('.arrow-icon').click(function(){
+		var arrow_num = parseInt( $(this).attr("arrow-num") );
+		$('#fp-nav ul li').eq( arrow_num ).children('a').trigger('click');
+	});
+});
+</script>
+<!--弹窗-->
+<link rel="stylesheet" type="text/css" href="css/popup.css"/>
+<script type="text/javascript" src="js/popup.js"></script>
+<script>
+$(function(){
+	$(".tiyan-btn").click(function(){
+		$(".shenqing-form-popup").popupFn();
+	});
+});
+</script>
+</head>
+<body>
+
+<!--申请试用-->
+<div class="ui-popup shenqing-form-popup" style="display:none;">
+  <div class="ui-popup_box">
+    <div class="pop_close_box"><a href="javascript:;" class="pop_close">&nbsp;</a></div>
+    <div class="shenqing-form">
+      <h2 class="h2-title font-one">申请试用</h2>
+      <div class="shenqing-form-content">
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td width="68">姓名</td>
+              <td><input type="text" class="input01" style="width:288px;" placeholder="请输入您的姓名"></td>
+            </tr>
+            <tr>
+              <td>电话</td>
+              <td><input type="text" class="input01" style="width:288px;" placeholder="请输入您的电话号码"></td>
+            </tr>
+            <tr>
+              <td>公司名称</td>
+              <td><input type="text" class="input01" style="width:288px;" placeholder="请填写您的公司名称"></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-center"><a href="#" class="submit-btn">提交</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui-mask"></div>
+<div id="hearder">
+  <div class="hearder clearfix">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div class="nav">
+      <ul>
+        <li><a href="01首页.html" class="active">首页</a></li>
+        <li><a href="02功能.html">功能</a></li>
+        <li><a href="03下载.html">下载</a></li>
+        <li><a href="04旗舰版.html">旗舰版</a></li>
+        <li><a href="05案例.html">案例</a></li>
+        <li><a href="06帮助.html">帮助</a></li>
+      </ul>
+      <!--登陆注册按钮-->
+      <!--<div class="landing_group"> <a href="#" class="landing-btn">登录</a> &nbsp;<a href="#" class="reg-btn">免费注册</a></div>-->
+      <!--登陆注册按钮-->
+      <div class="user_center"> <a href="#" class="user_name"><img src="images/user_img.png" width="30" height="30" alt=" "> <span class="name_text">王问问</span></a>  <span class="company">深圳尺子科技有限公司</span></div>
+    </div>
+  </div>
+</div>
+<div id="iclap-main" class="border-box-group">
+  <div class="section section1">
+    <div class="first-content clearfix">
+      <div class="fl-left">
+        <p class="section1-ptext01">你的APP就是你的产品协作系统</p>
+        <p class="section1-ptext02">iClap让每个APP具备协作能力</p>
+        <p class="section1-ptext03"><a href="javascript:;" class="tiyan-btn">申请试用</a></p>
+        <p class="section1-ptext04">将你的APP包上传到iClap，团队成员将自动更新版本，运行协同工作</p>
+        <div class="download-box">
+          <ul class="download-list clearfix">
+            <li class="li01">
+              <p class="pimg"><a href="#">&nbsp;</a></p>
+              <p class="ptext"><a href="#" title="">Android版</a></p>
+            </li>
+            <li class="li02">
+              <p class="pimg"><a href="#">&nbsp;</a></p>
+              <p class="ptext"><a href="#" title="">iphone版</a></p>
+            </li>
+            <li class="li03">
+              <p class="pimg"><img src="images/index/weixin.png" width="58" height="58" alt=" "></p>
+              <p class="ptext"><a href="#" title="">关注iClap</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ab-right"><img src="images/index/section01_img01.png" alt=" "></div>
+    </div>
+    <div class="arrow-icon01 arrow-icon" arrow-num='1'></div>
+  </div>
+  <div class="section section2">
+    <div class="second-content">
+      <h2 class="h2-title">iClap能给你的工作带来哪些改变？</h2>
+      <div class="gaibian-list clearfix">
+        <div class="gaibian-box gaibian-box01">
+          <div class="gaibian-icon"><a href="javascript:;" class="icon01">&nbsp;</a></div>
+          <p class="ptext01">产品内测</p>
+          <p class="ptext02">写很多的Bug文档</p>
+          <p class="ptext03">产品问题和建议不能直观反馈你记录了10M的Excel文档</p>
+          <p class="ptext04">丢掉文档</p>
+          <p class="ptext05">直接在你的APP应用页面上批注bug，自动生成记录</p>
+        </div>
+        <div class="gaibian-box gaibian-box02">
+          <div class="gaibian-icon"><a href="javascript:;" class="icon02">&nbsp;</a></div>
+          <p class="ptext01">版本发布</p>
+          <p class="ptext02">写很多的Bug文档</p>
+          <p class="ptext03">产品问题和建议不能直观反馈你记录了10M的Excel文档</p>
+          <p class="ptext04">丢掉文档</p>
+          <p class="ptext05">直接在你的APP应用页面上批注bug，自动生成记录</p>
+        </div>
+        <div class="gaibian-box gaibian-box03">
+          <div class="gaibian-icon"><a href="javascript:;" class="icon03">&nbsp;</a></div>
+          <p class="ptext01">任务分发</p>
+          <p class="ptext02">任务不能口头说</p>
+          <p class="ptext03">口头传达任务不清晰，没记录，回溯难</p>
+          <p class="ptext04">有任务随时说</p>
+          <p class="ptext05">iClap智能语音会精确将你的语音转换为任务</p>
+        </div>
+        <div class="gaibian-box gaibian-box04">
+          <div class="gaibian-icon"><a href="javascript:;" class="icon04">&nbsp;</a></div>
+          <p class="ptext01">项目协作</p>
+          <p class="ptext02">担心项目创意泄漏</p>
+          <p class="ptext03">使用第三方工具，在第三方平台上解决产品协作问题，隐私易泄漏</p>
+          <p class="ptext04">在自己的APP上协作</p>
+          <p class="ptext05">你的APP本身就是一个协作平台，可进行私有部署，不担心安全问题</p>
+        </div>
+        <div class="gaibian-box gaibian-box05">
+          <div class="gaibian-icon"><a href="javascript:;" class="icon05">&nbsp;</a></div>
+          <p class="ptext01">人才培养</p>
+          <p class="ptext02">焦虑项目整体动态</p>
+          <p class="ptext03">很难准确把握项目整体动态结果和任务跟踪零碎</p>
+          <p class="ptext04">掌控全局游刃有余</p>
+          <p class="ptext05">APP、效果图、原型图随时跟踪，任务和结果即点即看</p>
+        </div>
+      </div>
+      <div class="more-gongneng"><a href="#">查看更多功能</a></div>
+    </div>
+    <div class="arrow-icon02 arrow-icon" arrow-num='2'></div>
+  </div>
+  <div class="section section3">
+    <div class="third-content">
+      <h2 class="h2-title">批注 — 产品管理声景化</h2>
+      <div class="pizhu-content clearfix">
+        <div class="fl">
+         <a href="#" class="allvideo">查看全部视频>></a>
+        <a href="javascript:;" class="avideo"><img src="images/index/section03_img01.jpg" width="495" height="404" alt=" "></a></div>
+        <div class="fr">
+          <p class="ptext01">曾经你想在APP应用上，将你要修改的内容或者BUG等直接标注出来<br>
+            团队成员可在APP上直接查看你的批注，无须截图，直观高效！<br>
+            iClap做到了！</p>
+          <p class="ptext02">你可以在APP上创建：</p>
+          <ul class="ulbox01-imglist clearfix">
+            <li>
+              <p class="pimg"><img src="images/index/section03_icon01.png" width="41" height="49" alt=" "></p>
+              <p class="ptitle">语音批注</p>
+            </li>
+            <li>
+              <p class="pimg"><img src="images/index/section03_icon02.png" width="41" height="49" alt=" "></p>
+              <p class="ptitle">文字批注</p>
+            </li>
+            <li>
+              <p class="pimg"><img src="images/index/section03_icon03.png" width="41" height="49" alt=" "></p>
+              <p class="ptitle">图片批注</p>
+            </li>
+          </ul>
+          <p class="ptext03">批注功能支持：</p>
+          <ul class="ulbox02-imglist clearfix">
+            <li> <span><img src="images/index/section03_icon04.png" width="58" height="57" alt=" "></span> <span>APP应用</span> </li>
+            <li> <span><img src="images/index/section03_icon05.png" width="58" height="57" alt=" "></span> <span>效果图</span> </li>
+            <li> <span><img src="images/index/section03_icon06.png" width="58" height="57" alt=" "></span> <span>原型图</span> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-icon02 arrow-icon" arrow-num='3'></div>
+  </div>
+  <div class="section section7">
+    <div class="seventh-content">
+      <h2 class="h2-title">快捷发布 — 快速发布内测/公测版本</h2>
+      <p class="section7-ptext01">上传APP到iClap管理后台，将自动嵌入iClap协作SDK，通过二维码或者安装链接<br>
+        快速将内测或者公测版本发布给你的团队成员和种子用户</p>
+      <p class="section7-pimg01"><img src="images/index/banquan_img.png" alt=" "></p>
+      <p class="section7-pimg02"><img src="images/index/banquan_img02.png" alt=" "></p>
+    </div>
+    <div class="arrow-icon02 arrow-icon" arrow-num='4'></div>
+  </div>
+  <div class="section section4">
+    <div class="fourth-content">
+      <p class="section4-ptext01">智能语音 — 有事直接说</p>
+      <p class="section4-ptext02">iclap智能识别系统 &nbsp;    可以将你的语音 &nbsp;    精准的转换为任务<br>
+        自动识别任务内容 &nbsp;    完成时间和分配成员  &nbsp;   快速的完成任务下达</p>
+      <p class="section4-pimg01"><img src="images/index/renwu_img.png" class="renwu-img" alt=" "> <img src="images/index/section04_img01.png"  alt=" "></p>
+      <p class="section4-ptext03">一句话搞定所有事</p>
+    </div>
+    <div class="arrow-icon01 arrow-icon" arrow-num='5'></div>
+  </div>
+  <div class="section section5">
+    <div class="fifth-content">
+      <h2 class="h2-title">移动协作——你的APP就是最好的协作工具</h2>
+      <div class="xiezuo-content clearfix">
+        <div class="fl"><img src="images/index/section05_img.png" alt=" "></div>
+        <div class="fr">
+          <p class="ptext01">iClap提供SDK、移动客户端两种移动协作解决方案:</p>
+          <p class="ptext02"><span>iClap SDK，将APP协作化：</span></p>
+          <p class="ptext03">将iclap SDK 嵌入到你的APP，在你的APP上展开协同工作</p>
+          <p class="ptext04"><span>移动客户端，不再需要频繁安装版本：</span></p>
+          <p class="ptext05">将APP上传到iclap平台，基于iclap移动客户端进行协同工作</p>
+          <p class="ptext06"><a href="#">更强大的协作功能，查看旗舰版</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-icon02 arrow-icon" arrow-num='6'></div>
+  </div>
+  <div class="section section6">
+    <div class="sixth-content">
+      <h2 class="h2-title">Dev信息——培养人才,助力企业发展</h2>
+      <p class="section6-ptext01">Dev信息提供全职业的技能培养，包括最新视角的优秀资讯、行业竞品信息、素材/源码资料、圈子动态、新酷理念等<br>
+        为员工创造学习和提升的职业技能平台</p>
+      <p class="section6-pimg01"> <img src="images/index/lanmu.png" class="section6-img01" alt=" "> </p>
+      <p class="section6-pimg02"> <img src="images/index/lanmu_img02.png" class="section6-img02" alt=" "> </p>
+      <div class="sixth-dian sixth-dian01"><span>&nbsp;</span><i>&nbsp;</i></div>
+      <div class="sixth-dian sixth-dian02"><span>&nbsp;</span><i>&nbsp;</i></div>
+      <div class="sixth-dian sixth-dian03"><span>&nbsp;</span><i>&nbsp;</i></div>
+      <div class="sixth-dian sixth-dian04"><span>&nbsp;</span><i>&nbsp;</i></div>
+    </div>
+  </div>
+</div>
+<div class="footer" style=" display:none;">
+  <div class="footerbox">
+    <ul class="product">
+      <li>
+        <h1>产品</h1>
+      </li>
+      <li><a href="#">DevStore</a></li>
+      <li><a href="#">iClap</a></li>
+    </ul>
+    <ul class="iclap">
+      <li>
+        <h1>iClap</h1>
+      </li>
+      <li><a href="#">企业版</a></li>
+      <li><a href="#">案例</a></li>
+      <li><a href="#">帮助</a></li>
+      <li><a href="#">隐私政策</a></li>
+      <li><a href="#">服务条款</a></li>
+    </ul>
+    <ul class="contact">
+      <li>
+        <h1>联系我们</h1>
+      </li>
+      <li class="share"> <a class="sina" href="#"></a> <a class="weibo" href="#"></a> <a class="tone" href="#"></a> </li>
+      <li>客服QQ：1931358744</li>
+      <li>开发者交流群：367554077</li>
+      <li>运营交流群：344895847</li>
+      <li>产品交流群：58064712</li>
+    </ul>
+    <ul class="copyright">
+      <li>
+        <h1>版权所有</h1>
+      </li>
+      <li>深圳尺子科技有限公司</li>
+      <li>深圳市南山区高新园科技南十二路方大大厦603</li>
+      <li>Copyright © 2014 DevStore. All Rights Reserved</li>
+      <li>粤ICP备14013517号<a class="copy"></a></li>
+    </ul>
+  </div>
+  <div id="friends_links">
+  <div class="friends_links">
+  <strong>友情链接：</strong><a href="#">爱加密</a><a href="#">爱加密</a><a href="#">爱加密</a><a href="#">爱加密</a><a href="#">爱加密</a><a href="#">爱加密</a><a href="#" class="more-btn">更多>></a>
+  </div>
+  </div>
+</div>
+</body>
+</html>

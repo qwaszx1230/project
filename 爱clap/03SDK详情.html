@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>更新日志</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<link rel="stylesheet" type="text/css" href="css/globle2014.css"/>
+<link rel="stylesheet" type="text/css" href="css/public2015.css"/>
+<link rel="stylesheet" type="text/css" href="css/download.css"/>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div class="hearder-box"></div>
+<div id="hearder">
+  <div class="hearder clearfix">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+    <div class="nav">
+      <ul>
+        <li><a href="01首页.html">首页</a></li>
+        <li><a href="02功能.html">功能</a></li>
+        <li><a href="03下载.html" class="active">下载</a></li>
+        <li><a href="04旗舰版.html">旗舰版</a></li>
+        <li><a href="05案例.html">案例</a></li>
+        <li><a href="06帮助.html">帮助</a></li>
+      </ul>
+      <!--登陆注册按钮-->
+      <div class="landing_group"> <a href="#" class="landing-btn">登录</a> &nbsp;<a href="#" class="reg-btn">免费注册</a></div>
+    </div>
+  </div>
+</div>
+<div class="sdk-de">
+<h1 class="h1-title">iClap批注SDK集成文档</h1>
+<div></div>
+<h2 class="h2-title">一、概述</h2>
+<div class="pub-text01">iClap SDK是一个产品管理系统，专注于为移动互联网企业提供企业规范化解决方案，改变传统的产品管理模式，实现产品管理场景化。可以直接在APP内进行批注和任务的协作，实时将你要修改的内容或者Bug等进行推送，团队可在APP上直接查看，还原当时的场景，让工作简单智能人性化！</div>
+<h2 class="h2-title">二、获取密钥</h2>
+<div class="pub-text01">集成iclap SDK之前，您首先需要到iclap官网注册并且创建项目，以获得唯一appkey和secret，不同项目的APP禁止使用相同的appkey和secret。</div>
+<div class="pub-text01">获取密钥步骤：</div>
+<div class="pub-text01"> <img src="images/sdk_img01.png" width="883" height="261" alt=" "> </div>
+<h2 class="h2-title">三、开发指南</h2>
+<div class="pub-text01"> 引用iClap批注SDK
+  <p class="ptext01"> 首先，去网站下载iClap批注SDK库文件：<a href="#" class="glo_a">http://www.iclap.cn/down.html</a><br>
+    第一步：将下载的SDK解压后导入您的工程中，见下图： </p>
+  <div class="pub-text01"> <img src="images/sdk_pic02.jpg" width="1000" alt=" "> </div>
+  <p class="pub-text01">拖到工程中后弹出以下对话框，勾选”Copy items into destination group’s folder(if needed)”，并点击“Finish“按钮, 如图: </p>
+  <div class="pub-text01"> <img src="images/sdk_pic03.jpg" width="730" height="430" alt=" "> </div>
+  <p class="pub-text01 ptext01"> 然后,需要在项目main方法中添加</p>
+  <p class="ptext01 color01">// 初始化Dev批注(TokenId和SecretKey是获取的密钥)<br />
+    [[DevTongXieConfig sharedInstance] initIClapSDKWithTokenId:TokenId secretKey:SecretKey];</p>
+  <p class="ptext01">完成Tokenld和SecretKey验收后，即可使用批注功能。</p>
+</div>
+<h2 class="h2-title">四、类参考</h2>
+<div class="pub-text01">主要是批注功能扩展（批注样式、插件功能的开启与关闭）</div>
+<div class="pub-text01 color01">
+ /**<br>
+  *  根据申请的身份令牌信息<br>
+  *<br>
+  *  @param tokenIdStr 身份令牌，使用SHA-256加密的项目id<br>
+  *  @param tokenIdStr 加密字符，使用md5<br>
+  */<br>
+  - (void)initIClapSDKWithTokenId:(NSString *)tokenIdStr secretKey:(NSString *)secretKeyStr;<br>
+</div>
+<h2 class="h2-title">五、可选功能</h2>
+  <div class="pub-text01">说明：按照如下步骤配置后可在iClap直接启动APP</div>
+  <div class="pub-text01"> 1、找到APP的plist文件，复制 “Bundle identifier”对应的value值 </div>
+  <div class="pub-text01"><img src="images/sdk_pic04.png"alt=" " width="496" height="137"></div>
+  <div class="pub-text01">2、增加一个URL Types，如下图： </div>
+  <div class="pub-text01"><img src="images/sdk_pic05.png" width="1000"alt=" "></div>
+  <div class="pub-text01">3、第5步会添加一个URL Types，在“identifier”和“URL Schemes”对应值输入“Bundle identifier”对应的值，其中“URL Schemes”对应的值是必填项。 </div>
+  <h2 class="h2-title">六、常见问题</h2>
+  <div class="pub-text01">1、 64位支持 <span class="color01">（启用对64位支持）</span> <br />
+    2、 引用路径 <span class="color01"> （请按照开发文档配置SDK路径）</span><br />
+    3、 C++编译器 <span class="color01"> （Apple LLVM…Language - Modules使用C++11 support）</span><br />
+    4、 批注功能未能开启 <span class="color01"> （请检查获取的密钥TokenId和SecretKey值是否正确）</span><br />
+  </div>
+</div>
+<div class="footer">
+  <div class="footerbox">
+    <ul class="product">
+      <li>
+        <h1>产品</h1>
+      </li>
+      <li><a href="#">DevStore</a></li>
+      <li><a href="#">iClap</a></li>
+    </ul>
+    <ul class="iclap">
+      <li>
+        <h1>iClap</h1>
+      </li>
+      <li><a href="#">企业版</a></li>
+      <li><a href="#">案例</a></li>
+      <li><a href="#">帮助</a></li>
+      <li><a href="#">隐私政策</a></li>
+      <li><a href="#">服务条款</a></li>
+    </ul>
+    <ul class="contact">
+      <li>
+        <h1>联系我们</h1>
+      </li>
+      <li class="share"> <a class="sina" href="#"></a> <a class="weibo" href="#"></a> <a class="tone" href="#"></a> </li>
+      <li>客服QQ：1931358744</li>
+      <li>开发者交流群：367554077</li>
+      <li>运营交流群：344895847</li>
+      <li>产品交流群：58064712</li>
+    </ul>
+    <ul class="copyright">
+      <li>
+        <h1>版权所有</h1>
+      </li>
+      <li>深圳尺子科技有限公司</li>
+      <li>深圳市南山区高新园科技南十二路方大大厦603</li>
+      <li>Copyright © 2014 DevStore. All Rights Reserved</li>
+      <li>粤ICP备14013517号<a class="copy"></a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
