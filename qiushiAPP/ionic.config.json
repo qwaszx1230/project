@@ -1,0 +1,12 @@
+{
+  "name": "iApp",
+  "app_id": "",
+  "watchPatterns": [
+        "www/js/*",
+        "www/js/*/*",
+        "www/*.html",
+        "www/templates/*.html",
+        "www/css/*.css"
+   ]
+}
+

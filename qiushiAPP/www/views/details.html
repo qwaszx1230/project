@@ -1,0 +1,16 @@
+<ion-view>
+    <ion-nav-title>
+        <div class="button-bar">
+          <span>糗事</span>
+        </div>
+    </ion-nav-title>
+        <ion-content>
+            <div class="list detailList">
+                <a class="item item-avatar" href="#/tabs/details" ng-repeat="m in message">
+                    <img src="{{m.img}}">
+                    <h2>{{m.name}}</h2>
+                    <p>{{m.content}}</p>
+                </a>
+            </div>
+        </ion-content>
+</ion-view>

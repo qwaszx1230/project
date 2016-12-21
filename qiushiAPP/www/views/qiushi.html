@@ -1,0 +1,55 @@
+<ion-view  id="view-tabs-messages" hide-back-button="true" ng-click="closePop()">
+    <!-- 顶部的按钮 -->
+    <!-- 左边的头像 -->
+    <ion-nav-buttons side="primary">
+    <a href="#/tabs/qiushi">专享</a>
+    <a href="#/tabs/qiushi">视频</a>
+    <a href="#/tabs/qiushi">纯文</a>
+    <a href="#/tabs/qiushi">纯图</a>   
+    </ion-nav-buttons>
+    <!-- 右边的加号 -->
+    <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon-small icon ion-happy-outline"  ng-click="showPopup()"></button>
+        <button class="button button-icon icon-small icon ion-plus-round" ng-click="openPopover($event)"></button>
+
+    </ion-nav-buttons>
+    <ion-content>
+        
+      <div class="list">
+
+        <a class="item item-thumbnail-left" href="#/tabs/qiushi/details" ng-repeat="m in message" ng-model="content">
+          <img src="{{m.img}}">
+          <h2>{{m.name}}</h2>
+          <p>{{m.content}}</p>
+          <p class="count">点赞数：{{m.statsVote}}  评论数：{{m.commentsCount}}</p>
+        </a>
+      </div>
+    </ion-content>
+    <script id="popover" type="text/ng-template">
+        <ion-popover-view class="has-header">
+            <ion-list>
+                <ion-item class="item-icon-left">
+                    <span class="icon ion-chatbox-working"></span>发起多人聊天
+                </ion-item>
+                <ion-item class="item-icon-left">
+                    <span class="icon ion-person-add"></span>加好友
+                </ion-item>
+                <ion-item class="item-icon-left">
+                    <span class="icon ion-search"></span>搜索群
+                </ion-item>
+                <ion-item class="item-icon-left">
+                    <span class="icon ion-ios-gear"></span>设置
+                </ion-item>
+                <ion-item class="item-icon-left">
+                    <span class="icon ion-card"></span>更多
+                </ion-item>
+                <!-- <ion-item class="item-icon-left">
+                    <span class="icon ion-card"></span>更多
+                </ion-item> -->
+            </ion-list>
+        </ion-popover-view>
+    </script>
+     <script id="popup-template.html" type="text/ng-template">
+       
+    </script>
+</ion-view>
