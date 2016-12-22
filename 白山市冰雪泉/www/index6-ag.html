@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>白山市冰雪泉</title>
+    <meta charset="utf-8">
+    <meta name="Keywords " content="$SiteKeywords " />
+    <meta name="Description " content="$SiteDescription " />
+    <link rel="stylesheet " type="text/css " href="css/globle.css " />
+    <link rel="stylesheet " type="text/css " href="css/style.css " />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/png">
+    <script src="js/angular.js"></script>
+    <script src='js/jquery-2.0.3.js'></script>
+    <style>
+.fn-vhid{ visibility:hidden;}
+.fn-tinput{ width:240px; height:30px; line-height:30px\9; border:#ddd solid 1px; background-color:transparent; padding:0 6px;border-radius: 5px;}
+textarea {border:#ddd solid 1px; background-color:transparent; width:60%}
+/*.fn-tinput:focus,textarea:focus{ border-color:#C00;}*/
+.bl-form label{ float:left; width:100px; text-align:right; padding-top:6px;}
+.bl-form .controls label{ width:auto;}
+.bl-form li{ margin-top:20px; overflow:hidden;}
+span.error{color:#C00; padding:0 6px;}
+span{color: red;}
+.right{color: green;}
+.demobox{width:500px;padding: 30px;margin: 0 auto;font-size:12px; color:#444;}
+    </style>
+</head>
+
+<body class="font-one">
+    <div class="index_head">
+        <ul class="right_nav fr">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="index1.html">关于我们</a></li>
+            <li><a href="index2.html">公司简介</a></li>
+            <li><a href="index3.html">品牌介绍</a></li>
+            <li><a href="index4.html">新闻中心</a></li>
+            <li><a href="index5.html">招商加盟</a></li>
+            <li class="currt1"><a href="index6.html">招贤纳士</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="logo1 fl">
+            <a href="index1.html">
+                <img src="images/56446e363fc0b.png" alt="">
+            </a>
+        </div>
+        <div class="weibo fr">
+            <a class="a1" href=""></a>
+            <a class="a2" href=""></a>
+        </div>
+    </header>
+    <div class="banner"></div>
+    <div class="main main02">
+        <ul>
+            <span>招贤纳士</span>
+            <br>
+            <span><img src="images/gs_bj.png" alt=""></span>
+            <br>
+            <span class="about">Talented people</span>
+        </ul>
+    </div>
+<div ng-app="App" ng-controller="AppController" class="demobox">
+  <form name="myform" class="bl-form bl-formhor" id="jsForm">
+        <ul>
+            <li class="bl-form-group">
+                <label>姓名：</label>
+                <div class="controls">
+                    <input type="text" value="" name="name" ng-model="name" class="fn-tinput" required />
+                    <span ng-show="myform.name.$touched"><span ng-show="myform.name.$error.required">姓名不能为空！</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>性别：</label>
+                <div class="controls">
+                    <input type="text" value="" name="sex" ng-model="sex" class="fn-tinput" required />
+                    <span ng-show="myform.sex.$touched"><span ng-show="myform.sex.$error.required">姓别不能为空！</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>年龄：</label>
+                <div class="controls">
+                    <input type="text" value="" name="age" ng-model="age" class="fn-tinput" required />
+                    <span ng-show="myform.age.$touched"><span ng-show="myform.age.$error.required">年龄不能为空！</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>联系电话：</label>
+                <div class="controls">
+                    <input type="text" value="" name="phone" ng-model="phone" class="fn-tinput" required>
+                    <span ng-show="myform.phone.$touched"><span ng-show="myform.phone.$error.required">电话不能为空！</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>学历：</label>
+                <div class="controls">
+                    <input type="text" value="" name="education" ng-model="education" class="fn-tinput" required />
+                    <span ng-show="myform.education.$touched"><span ng-show="myform.education.$error.required">学历不能为空</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>专业：</label>
+                <div class="controls">
+                    <input type="text" value="" name="major" ng-model="major" class="fn-tinput" required />
+                    <span ng-show="myform.major.$touched"><span ng-show="myform.major.$error.required">专业不能为空！</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>籍贯：</label>
+                <div class="controls">
+                    <input type="text" value="" name="birthplace" ng-model="birthplace" class="fn-tinput" required />
+                    <span ng-show="myform.birthplace.$touched"><span ng-show="myform.birthplace.$error.required">籍贯不能为空！</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>民族：</label>
+                <div class="controls">
+                    <input type="text" value="" name="nation" ng-model="nation" class="fn-tinput" required />
+                    <span ng-show="myform.nation.$touched"><span ng-show="myform.nation.$error.required">民族不能为空！</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>毕业院校：</label>
+                <div class="controls">
+                    <input type="text" value="" name="school" ng-model="school" class="fn-tinput" required />
+                    <span ng-show="myform.school.$touched"><span ng-show="myform.school.$error.required">院校不能为空！</span></span>
+                </div>
+            </li>
+           <li class="bl-form-group">
+                <label>住址：</label>
+                <div class="controls">
+                    <input type="text" value="" name="place" ng-model="place" class="fn-tinput" required />
+                    <span ng-show="myform.place.$touched"><span ng-show="myform.place.$error.required">住址不能为空！</span></span>
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>电子邮箱：</label>
+                <div class="controls">
+                    <input type="email" value="" name="email" ng-model="email" class="fn-tinput" required />
+                    <span ng-show="myform.email.$touched"><span ng-show="myform.email.$error.required">邮箱不能为空！</span></span>
+                </div>
+            </li> 
+            <li class="bl-form-group">
+                <label>求职意向：</label>
+                <div class="controls">
+                    <input type="text" value="" name="job" ng-model="job" class="fn-tinput" />
+                </div>
+            </li>
+            <li class="bl-form-group">
+                <label>自我评价：</label>
+                <div class="controls editor">
+                    <textarea name="textarea1" cols="" rows="" ></textarea>
+                </div>
+            </li>
+            <li class="bl-form-group bl-form-btns">
+                <label class="fn-vhid">提交：</label>
+                <div class="controls">
+                    <button class="fn-btn btn-primary btn-submit submitBtn" type="submit" ng-click="submit()" ng-disabled="myform.$invalid" >提交</button>
+                </div>
+            </li>
+        </ul>
+    </form>
+</div>
+    <footer>
+        Copyright ® 2015 All rights reserved. 白山市冰雪泉水业有限公司版权所有
+    </footer>
+<script src="/app.js"></script>
+</body>
+<script>
+</script>
+
+</html>
