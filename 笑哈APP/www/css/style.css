@@ -1,0 +1,365 @@
+/* Empty. Add your own CSS if you like */
+
+.bar-header .button-bar {
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.bar-header .button-bar span{
+    width: auto;
+    flex: initial;
+    -webkit-flex: initial;
+    line-height: 27px;
+    min-height: 26px;
+    padding: 0 14px;
+}
+
+.bar-header .button-bar .button-small {
+    border-color: white;
+}
+
+.bar-header .button-bar .button.activated {
+    background-color: white !important;
+    border-color: white;
+    color: #387ef5;
+    text-shadow: none;
+}
+
+.bar-header .secondary-buttons .button-icon::before {
+    font-size: 30px;
+}
+.buttons-right .secondary-buttons .button-icon::before {
+    font-size: 25px;
+}
+.buttons-right .secondary-buttons .qiandao{
+    font-size: 12px;
+    background-color: white;
+    color: #FFC900;
+    width: 65px;
+    height: 23px;
+    margin-right: 5px;
+}
+.bar-header .primary-buttons {
+    display: block;
+    line-height: 33px;
+    margin-left: 15px;
+    width: 200px;
+}
+
+.bar-header .primary-buttons a {
+    width: 40px;
+    height: 35px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.bar-header .primary-buttons .home{
+    width: 90px;
+}
+.bar-header .primary-buttons .home .icon::before{
+    font-size: 25px;
+    margin-left: -8px;
+}
+.bar-header .primary-buttons .home span{
+     width: 90px;
+   
+}
+.tabs-messages-popover {
+    height: auto;
+    width: 43vw;
+}
+
+.tabs-messages-popover .item:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.tabs-messages-popover .item:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.tabs-messages-popover .item i {
+    font-size: 25px;
+}
+
+.tabs-messages-popover .item {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#view-tabs-dialogs .bar-footer {
+    padding: 3px;
+}
+
+#view-tabs-dialogs .button:last-child {
+    top: 3px;
+}
+.popover-wrapper .popover{
+    top:40px;
+}
+.popover-wrapper .popover-arrow{
+    display: none;
+}
+.list .count{
+    margin-top: 25px;
+    color: #999
+}
+.box{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.box div{
+    display: inline-block;
+    width: 49%;
+    height: 150px;
+    position: relative;
+   
+}
+.box div img{
+    width: 100%;
+    height: 100%;
+}
+.box div p{
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: #999
+
+}
+.box div .icon{
+    position: absolute;
+    top: 50px;
+    left: 75px;
+    z-index: 100;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.selfContent{
+    background-color: #eee9e9;
+}
+.selfList{
+    margin-top: 8px;
+    font-size: 15px;
+}
+.selfList .list{
+    line-height: 54px
+}
+.selfList .list .icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+    margin-top: 10px
+} 
+.selfList .list .login{
+    width: 40px;
+    height: 40px;
+    background-color: #cac7bb;
+    border-radius: 0px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+    color: #fff;
+    margin-top: 25px;
+}
+.selfList .reg{
+    padding-left: 70px
+}
+.selfDiv{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    padding-top: 20px;
+    margin-top: 8px;
+    padding-left: 15px;
+}
+.selfDiv div{
+    display: inline-block;
+    width:23%;
+    font-size: 12px;
+    text-align: center
+}
+
+.selfDiv div .icon{
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;   
+}
+.selfDiv div:nth-child(1) .icon{
+  background-color: #a320da;
+}
+.selfDiv div:nth-child(2) .icon{
+  background-color: #51c931;
+}
+.selfDiv div:nth-child(3) .icon{
+  background-color: #e27ad2;
+}
+.selfDiv div:nth-child(4) .icon{
+  background-color: #df9109;
+}
+.item2{
+  height: 60px;
+  padding-top: 0px
+}
+.card .item p{
+    font-size: 15px;
+}
+.card .item .subdued{
+  margin-left: 20px;
+}
+.card .item .subdued .icon{
+    font-size: 22px;
+}
+.popup-container .popup{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.popup-container .popup .popup-head{
+    display: none;
+}
+.popBox{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    border-color: #fff;
+    margin-top: 20px;
+  position: relative;
+}
+.popBox .popColse{
+    font-size: 25px;
+    position: absolute;right: 0px;
+    top: -25px;
+    cursor: pointer;
+}
+.popBox .popDiv2{
+    border-top: 1px solid #d0ccd2;
+    position: relative;
+    margin-top: 20px;
+}
+.popBox .popDiv2 span{
+    display: inline-block;
+    width: 105px;
+    height: 15px;
+    font-size: 12px;
+    color: #b7b2ba;
+    position: absolute;
+    left: 20%;
+    top: -10px;
+    z-index: 100;
+    background-color: #fff;
+}
+.popBox .popDiv3{
+    margin-top: 20px;
+}
+.popBox .popDiv3 div{
+    display: inline-block;
+    width: 23%;
+}
+.popBox .popDiv3 div span{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 50%;
+}
+.popBox .popDiv3 div span img{
+    width: 23px;
+    height: 23px;
+}
+.popBox .popDiv3 div p{
+    font-size: 12px;
+}
+.detailList .item p{
+    white-space: normal;
+}
+.bar-header .primary-buttons .delTit{
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+}
+// friend的弹窗
+.scroll .friBox{
+   background-color: #f7f3f3; 
+}
+.friBox .friDiv1{
+    border-top: 1px solid #d5d0d0;
+    position: relative;
+    margin-top: 25px;
+}
+.friBox .friDiv1 span{
+    font-size: 14px;
+    display: inline-block;
+    width: 180px;
+    height: 14px;
+    position: absolute;
+    left: 90px;
+    top: -10px;
+    background-color: #fff;
+    text-align: center;
+    color: #d5d0d0;
+}
+.friBox .friDiv2{
+    padding: 10px 30px;
+}
+.friBox .friDiv2 .buttons{position: relative;}
+.friBox .friDiv2 .button .friQQ{position: absolute;top: 0px;left: 0px;display:inline-block;width: 50px;height: 46px;text-align: center;padding-top: 7px;background-color:rgba(130,130,130,0.4)}
+.friBox .friDiv2 .button .friQQ>img{inline-block;width: 30px;height: 30px;}
+.friBox .friDiv1 .list{
+    padding:10px 20px;
+}
+#textarea{width: 100%;height:60%;padding: 8px 20px;font-size: 16px}
+
+#addConent .addPhoto{
+    margin-left: 20px;
+    width: 85px;
+    height: 85px;
+    border: 1px dashed #b0b3af;
+    color: #b0b3af;
+    text-align: center;
+}
+#addConent .addPhoto .icon{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+
+}
+#addFoot{
+    padding: 0px;
+    height: 25px;
+}
+#addFoot .buttons{
+    font-size: 11px;
+    color: #b0b3af;
+}
+#addFoot .buttons .icon{
+ font-size: 20px;
+ margin-left: 15px;
+}
+
+.selPopBox p {
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

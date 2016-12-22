@@ -1,0 +1,37 @@
+<ion-view hide-back-button="true">
+    <ion-nav-buttons side="left">
+        <button class="button button-clear" ng-click="goback()">取消</button>
+    </ion-nav-buttons>
+    <ion-nav-title>
+        <div class="button-bar" style="font-size: 14px;">
+            <span style="padding-right: 0px;">所有人可见</span><span class="icon ion-ios-arrow-down" style="cursor: pointer;" ng-click="selectOpen()"></span>
+        </div>
+    </ion-nav-title>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear">发布</button>
+    </ion-nav-buttons>
+    <ion-content id="addConent">
+        <textarea name="" id="textarea" cols="55" rows="10" placeholder="这一刻你在想什么"></textarea>
+        <div class="addPhoto">
+            <span class="icon ion-camera"></span>
+            <span>添加图片</span>
+        </div>
+    </ion-content>
+    <ion-footer-bar id="addFoot">
+        <div class="buttons">
+            <span class="icon ion-podium"></span>
+            <span class="icon ion-ios-grid-view-outline"></span>
+            <span class="icon ion-ionic"></span>
+        </div>
+        <h1 class="title"></h1>
+        <div class="buttons">
+            <span>河南省郑州市管城回族区</span>
+        </div>
+    </ion-footer-bar>
+    <script id="selectPopup" type="text/ng-template">
+    <div ng-model="data" id="selPopBox">
+  
+    </div>
+</script>
+</ion-view>
+
